@@ -4,8 +4,8 @@ SUBLEVEL = 104
 EXTRAVERSION =
 NAME = TOSSUG Baby Fish
 
-#TOOLCHAIN_DIR = $(CURDIR)/toolchain/aarch64-7.0/bin/aarch64-
-TOOLCHAIN_DIR =/home/sick/aarch64-7.0/bin/aarch64-
+#TOOLCHAIN_DIR = $(CURDIR)/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+TOOLCHAIN_DIR =/build/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
 ifdef CONFIG_WITH_CCACHE
 ccache := ccache

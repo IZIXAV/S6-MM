@@ -50,7 +50,7 @@ if [ "$TARGET" != "" ]; then
 else
         echo ""
         echo "You need to define your device target!"
-        echo "example: build_kernel.sh G920P"
+        echo "example: build_kernel.sh G920F"
         exit 1
 fi
 
@@ -75,8 +75,8 @@ if [ "$TARGET" = "G925P" ] ; then
 	export KERNEL_CONFIG="custom-zeroltespr_defconfig";
 fi;
 
-# G920T
-if [ "$TARGET" = "G920T" ] ; then
+# G920F
+if [ "$TARGET" = "G920F" ] ; then
 	export KERNEL_CONFIG="custom_defconfig";
 fi;
 
@@ -91,7 +91,7 @@ export TMPFILE=`mktemp -t`;
 
 
 # system compiler
-export CROSS_COMPILE=/home/sick/aarch64-7.0/bin/aarch64-
+export CROSS_COMPILE=/build/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
 
 # CPU Core
